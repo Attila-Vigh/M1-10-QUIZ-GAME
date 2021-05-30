@@ -13,10 +13,10 @@
  - [EXTRA] Present the questions one a time instead of having all displayed together          
 
 ## HINTS:         
- - Keep a global variable score for the user score         
- - Keep a variable questionNumber for the question the user is answering         
- - When questionNumber is bigger then the available questions, present the score         
- - Start working with the questions saved in a variable (or you can use AJAX for fetching external questions if you already know it!)         
+ - Keep a global variable **score** for the user score         
+ - Keep a variable **questionNumber** for the question the user is answering         
+ - When questionNumber is bigger then the available **questions**, present the score         
+ - Start working with the questions saved in a variable (or you can use AJAX for fetching external questions if you already know it!)
  - Start with the easier version and THEN implement the EXTRAs         
  - Please debug everything 
  - try it on the console to be sure of what to expect from your code          
