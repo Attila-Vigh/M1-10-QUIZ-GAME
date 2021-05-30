@@ -1,17 +1,24 @@
 window.onload = function () {
     
-    result()
+    displayQuiz()
     
 }
-const result = async function() {
+
+const getQuziData = async function() {
     
     let quiz = await fetch("https://opentdb.com/api.php?amount=10&category=18&difficulty=hard")
     .then( result => result.json())
     .then( result => result.results)
     // .then( result => console.log(result))
     .catch( err => console.log(err))
-    console.log("quiz", quiz)
-    
+                                                        console.log("quiz ", quiz) // TODO: delete
+    return quiz
+}
+                                                    
+const displayQuiz = async function(){
+        
+    const quiz = await getQuziData()
+                                                        console.log("quiz ", quiz) // TODO: delete
     let ol = document.querySelector("ol")
     for( const q of quiz ){
         
